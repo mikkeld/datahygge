@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Goals from "./goals/containers/goals";
+import GoalDetails from "./goals/containers/goal-details/goal-details";
+import {
+    BrowserRouter as Router,
+    Route,
+} from 'react-router-dom';
+import ResponsiveDrawer from "./shared/components/responsive-drawer";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <Router>
+            <ResponsiveDrawer>
+                <div>
+                    <Route exact path="/" component={Goals}/>
+                    <Route path="/goals/:id" render={({match}) => <GoalDetails id={match.params.id}/>}/>
+                </div>
+            </ResponsiveDrawer>
+        </Router>
     );
   }
 }

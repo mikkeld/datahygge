@@ -1,0 +1,44 @@
+{
+  "goals": [
+    {
+      "id": 1,
+      "impact_data": [
+        {
+          "label": "Landing Page",
+          "impact": 0.85
+        },
+        {
+          "label": "Add to chart",
+          "impact": 0.7
+        }
+      ],
+      "journey_data": [
+        {
+          "timestamp": 0,
+          "label": "Landing Page"
+        },
+        {
+          "timestamp": 2,
+          "label": "Purchase price"
+        },
+        {
+          "timestamp": 3,
+          "label": "Checkout page"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "impact_data": [
+        {
+          "label": "Landing Page",
+          "impact": 0.95
+        },
+        {
+          "label": "Add to chart",
+          "impact": 0.7
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { withStyles } from '@material-ui/core/styles';
+import GoalSummary from "../../components/goal-details/summary";
 
 const styles = theme => ({
     root: {
@@ -46,7 +47,7 @@ class GoalDetails extends Component {
                     <Tab label="Impact" />
                     <Tab label="Journeys" />
                 </Tabs>
-                {this.state.activeTab === 0 && <p>Summary</p>}
+                {this.state.activeTab === 0 && this.state.goal && <GoalSummary data={this.state.goal}/>}
                 {this.state.activeTab === 1 && this.state.goal && <Impact data={this.state.goal}/>}
                 {this.state.activeTab === 2 && this.state.goal && <Journeys data={this.state.goal}/>}
             </Paper>

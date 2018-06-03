@@ -8,13 +8,13 @@ const ACTIVE_GOALS = [
         id: 1,
         name: "PDF downloads",
         description: "Number of PDF downloads for the company folder",
-        data: [1,2,3,4,5]
+        data: [1,3,3,4,2]
     },
     {
         id: 2,
         name: "Purchase order",
         description: "Number of purchased orders",
-        data: [1,2,3,4,5]
+        data: [1,10,5,12,20]
     },
 ];
 

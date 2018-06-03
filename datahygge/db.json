@@ -10,20 +10,66 @@
         {
           "label": "Add to chart",
           "impact": 0.7
+        },
+        {
+          "label": "Read FAQ",
+          "impact": -0.1
+        },
+        {
+          "label": "Wrote support@test.com",
+          "impact": -0.6
         }
       ],
-      "journey_data": [
+      "journeys": [
         {
-          "timestamp": 0,
-          "label": "Landing Page"
+          "id": 1,
+          "journey_data": [
+            {
+              "timestamp": 0,
+              "label": "Landing Page",
+              "image": "https://firebasestorage.googleapis.com/v0/b/anasist-191616.appspot.com/o/uploads%2Flanding.png?alt=media&token=0bd882e9-de55-4bb8-b579-263d81473625"
+            },
+            {
+              "timestamp": 1,
+              "label": "Browsing",
+              "image": "https://firebasestorage.googleapis.com/v0/b/anasist-191616.appspot.com/o/uploads%2Fbrowsing.png?alt=media&token=c88e6d77-67c1-4529-bc37-fe6f4c6ac4dd"
+            },
+            {
+              "timestamp": 2,
+              "label": "Restaurant",
+              "image": "https://firebasestorage.googleapis.com/v0/b/anasist-191616.appspot.com/o/uploads%2Frestaurant1.png?alt=media&token=75af6221-4b2f-4dae-8e06-fd519274aa93"
+            },
+            {
+              "timestamp": 3,
+              "label": "Error",
+              "image": "https://firebasestorage.googleapis.com/v0/b/anasist-191616.appspot.com/o/uploads%2Ferror.png?alt=media&token=945ddf50-da50-44cf-89b9-b370fc87f08e"
+            },
+            {
+              "timestamp": 4,
+              "label": "Pay",
+              "image": "https://firebasestorage.googleapis.com/v0/b/anasist-191616.appspot.com/o/uploads%2Fpay.png?alt=media&token=293cd55a-4bf8-4160-b473-24edf4777c56"
+            }
+          ]
         },
         {
-          "timestamp": 2,
-          "label": "Purchase price"
-        },
-        {
-          "timestamp": 3,
-          "label": "Checkout page"
+          "id": 2,
+          "journey_data": [
+            {
+              "timestamp": 0,
+              "label": "Landing Page",
+              "image": "https://firebasestorage.googleapis.com/v0/b/anasist-191616.appspot.com/o/uploads%2Flanding.png?alt=media&token=0bd882e9-de55-4bb8-b579-263d81473625"
+            },
+            {
+              "timestamp": 3,
+              "label": "Error",
+              "image": "https://firebasestorage.googleapis.com/v0/b/anasist-191616.appspot.com/o/uploads%2Ferror.png?alt=media&token=945ddf50-da50-44cf-89b9-b370fc87f08e"
+            },
+            {
+              "timestamp": 4,
+              "label": "Pay",
+              "image": "https://firebasestorage.googleapis.com/v0/b/anasist-191616.appspot.com/o/uploads%2Fpay.png?alt=media&token=293cd55a-4bf8-4160-b473-24edf4777c56"
+            }
+          ]
         }
       ]
     },
@@ -39,6 +85,38 @@
           "impact": 0.7
         }
       ]
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "label": "Buy button",
+      "clicks": 200,
+      "impressions": 1000
+    },
+    {
+      "id": 2,
+      "label": "Discount banner",
+      "clicks": 20,
+      "impressions": 300
+    },
+    {
+      "id": 3,
+      "label": "Signupp form",
+      "clicks": 1,
+      "impressions": 1000
+    },
+    {
+      "id": 4,
+      "label": "Info video",
+      "clicks": 2000,
+      "impressions": 5000
+    },
+    {
+      "id": 5,
+      "label": "Search bar",
+      "clicks": 2000,
+      "impressions": 5000
     }
   ]
 }

@@ -1,0 +1,1 @@
+export const formatPercentage = decimal => decimal * 100 + "%";

@@ -1,14 +1,12 @@
 import React from 'react';
+import ImageGrid from './image-grid';
 
 const Journeys = props => {
     return (
         <div>
-            <h2>Journeys for goal</h2>
-            <ul>
-                {
-                    props.data['journey_data'].map(data => <li>{data.timestamp}: {data.label}</li>)
-                }
-            </ul>
+            {
+                props.data.journeys.map((journey, index) => <ImageGrid data={journey['journey_data']} title={index+1} />)
+            }
         </div>
     )
 };
